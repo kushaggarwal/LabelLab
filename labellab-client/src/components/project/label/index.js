@@ -109,7 +109,7 @@ class LabelIndex extends Component {
             <Table.Body>
               {labels.map((label, index) => (
                 <LabelItem
-                  index={index}
+                  key={index}
                   label={label}
                   options={options}
                   onChange={this.onChange}
